@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+nav #burger:checked~ul {
+    right: 0%;
+    transition: all 0.3s ease;
+    background-color: black;
+    padding-left: 2em;
+    padding-right: 2em;
+    line-height: 3;
+    text-align: center;
+}
+
+.rgb {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.desc #show-more:checked~.comment,
+.desc #show-more1:checked~.comment,
+.desc #show-more2:checked~.comment,
+.desc #show-more3:checked~.comment,
+.desc #show-more4:checked~.comment,
+.desc #show-more5:checked~.comment {
+    max-height: 100vh;
+}
+
+.faq1 #show-faq:checked~.comment,
+.faq1 #show-faq1:checked~.comment,
+.faq1 #show-faq2:checked~.comment,
+.faq1 #show-faq3:checked~.comment {
+    max-height: 100vh;
+}
+
+.break {
+    word-wrap: break-word;
+    break-after: always;
+    word-break: keep-all;
+}
+
+.secondary-title {
+    @apply text-3xl font-bold;
+}
+
+.work-title {
+    @apply text-3xl font-bold;
+}
+
+.project-title {
+    @apply text-5xl font-normal;
+}
+
+.desc-title {
+    @apply text-xl font-semibold text-black;
+}
+
+.secondary-title::before {
+    content: "";
+    @apply block w-12 h-2 bg-box1 rounded-full mb-1;
+}
+
+.section-paragraph {
+    @apply text-black w-full max-w-3xl;
+}
+
+.zindex {
+    z-index: 99;
+}
+
+.zindex1 {
+    z-index: 1000;
+}
+
+.w-10-10 {
+    width: 10%;
+}
+.margin-center{
+    margin: 0 auto;
+}
+.margin-top-center{
+    margin: 2em auto 0;
+}
+.other-bg{
+    background-color: #EFEFEF;
+}
+.preloader {
+    background: #fff url(../dist/img/Amazon-Logo-color.png) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: none;
+}
+
+.aboutimg {
+    width: 100%;
+    height: 30em;
+    object-fit: cover;
+}
+
+.side-shadow {
+    box-shadow: 10px 10px 0px black;
+}
+.banner{
+    background-image: url(../dist/img/shutterstock_450945757-1.jpg);
+}
+.about{
+    background-image: url(../dist/img/topo.png);
+}
+.semi-end{
+    background-image: url(../dist/img/amazon31.jpg);
+    transition: all 1s ease-in ;
+}
+.footer{
+    background-color: #1B1B1B;
+}
+.toShow{
+    transition: all 0.5s ease-in-out;
+}
+.toHover:hover .toShow{
+   opacity: 1;
+    width: 8em;
+    text-align: center;
+}
