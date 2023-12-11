@@ -1349,6 +1349,14 @@ nav #burger:checked~ul {
 }
 
 @media (min-width: 768px){
+  .md\:top-56{
+    top: 14rem;
+  }
+
+  .md\:top-48{
+    top: 12rem;
+  }
+
   .md\:order-1{
     order: 1;
   }
@@ -1430,6 +1438,10 @@ nav #burger:checked~ul {
 }
 
 @media (min-width: 1024px){
+  .lg\:top-72{
+    top: 18rem;
+  }
+
   .lg\:col-span-6{
     grid-column: span 6 / span 6;
   }
